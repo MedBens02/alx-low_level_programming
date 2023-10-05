@@ -1,7 +1,12 @@
 #include <stdio.h>
 
 /**
- * This code prints a sentence
+ * main - Entry point of the program
+ * 
+ * Description: This function is the entry point of the program and
+ *              prints a message to the standard output.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
