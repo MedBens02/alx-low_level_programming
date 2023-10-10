@@ -3,6 +3,8 @@
 /**
  * _islower - Checks for lowercase ch
  *
+ * @c: fct input
+ *
  * Return: returns 1 if c is lc otherwise always 0 (Success)
  */
 
