@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * add - adds 2 int
  *
  * @a: first input
