@@ -9,7 +9,7 @@
  * Return: result
  */
 
-add(int a, int b)
+int add(int a, int b)
 {
 	int S = a + b;
 	return (S);
