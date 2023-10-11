@@ -11,7 +11,7 @@
 int xLength(int x)
 {
 	int L = 0;
-	if (x = 0)
+	if (x == 0)
 		L = 1;
     
 	while (x != 0)
