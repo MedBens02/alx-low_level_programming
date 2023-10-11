@@ -8,13 +8,13 @@
  * Return: Always 0 (Success)
  */
 
-int main (void)
+int main(void)
 {
 	unsigned long a = 1, b = 2, S;
 	int i;
 
 	printf("%lu, %lu", a, b);
-	while (i < 50)
+	while (i < 48)
 	{
 		S = a + b;
 		printf(", %lu", S);
