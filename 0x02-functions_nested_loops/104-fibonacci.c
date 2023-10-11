@@ -11,9 +11,10 @@
 int xLength(int x)
 {
 	int L = 0;
+
 	if (x == 0)
 		L = 1;
-    
+
 	while (x != 0)
 	{
 		x = x / 10;
@@ -34,8 +35,8 @@ int main(void)
 {
 	int i, partZero;
 	unsigned long f1 = 1, f2 = 2, S, max = 100000000, f1o = 0, f2o = 0, So = 0;
-    
-	for (i = 1; i <= 98; i ++)
+
+	for (i = 1; i <= 98; i++)
 	{
 		if (f1o > 0)
 			printf("%lu", f1o);
@@ -57,7 +58,7 @@ int main(void)
 		if (i != 98)
 			printf(", ");
 		else
-		       	printf("\n");
+			printf("\n");
 	}
-	return 0;
+	return (0);
 }
