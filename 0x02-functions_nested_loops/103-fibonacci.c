@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	unsigned long a, b, S, eS;
+	unsigned long a = 1, b = 2, S = 0, eS;
 
 	while (S <= 4000000)
 	{
