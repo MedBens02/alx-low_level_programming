@@ -20,6 +20,6 @@ int main(void)
 		a = b;
 		b = S;
 	}
-	printf("%d\n", eS);
+	printf("%lu\n", eS);
 	return (0);
 }
