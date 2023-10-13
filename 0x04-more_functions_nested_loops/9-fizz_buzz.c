@@ -3,12 +3,12 @@
 /**
  * main - Entry pt
  *
- * Descriptio: Fizz-Buzz test
+ * Description: Fizz-Buzz test
  *
  * Return: Always 0 (Success)
  */
 
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -22,4 +22,5 @@ void main(void)
 			printf("%d ", i);
 	}
 	printf("\n");
+	return (0);
 }
