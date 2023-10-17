@@ -15,12 +15,12 @@ int main(void)
 
 	srand(time(NULL));
 
-	while (pass <= 3000)
+	while (pass <= 2645)
 	{
 		c = rand() % 128;
 		pass *= c;
 		putchar(c);
 	}
-	putchar(3127 - pass);
+	putchar(2772 - pass);
 	return (0);
 }
