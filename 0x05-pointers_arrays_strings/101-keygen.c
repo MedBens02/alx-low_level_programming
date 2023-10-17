@@ -13,14 +13,14 @@ int main(void)
 	int pass;
 	char c;
 
-	srand(time(NULL));
+	srand(time(0));
 
-	while (pass <= 3000)
+	while (pass <= 2645)
 	{
 		c = rand() % 128;
 		pass += c;
 		putchar(c);
 	}
-	putchar(3127 - pass);
+	putchar(2772 - pass);
 	return (0);
 }
