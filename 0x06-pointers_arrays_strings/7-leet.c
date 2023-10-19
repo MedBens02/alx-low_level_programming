@@ -19,7 +19,7 @@ char *leet(char *str)
 		char *check = chars;
 		char *flip = codes;
 
-		while(*check != '\0')
+		while (*check != '\0')
 		{
 			if (*p == *check)
 			{
