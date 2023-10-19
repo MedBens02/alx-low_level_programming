@@ -11,23 +11,21 @@
 char *rot13(char *str)
 {
 	char *p = str;
-	char *chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char *rot = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	while (*str != '\0')
 	{
-		char *check = chars;
-		char *flip = rot;
+		int i = 0;
 
-		while (*check != '\0')
+		while (i <= 52)
 		{
-			if (*str == *check)
+			if (*str == chars[i])
 			{
-				*str = *flip;
+				*str = rot[i];
 				break;
 			}
-			check++;
-			flip++;
+			i++;
 		}
 		str++;
 	}
