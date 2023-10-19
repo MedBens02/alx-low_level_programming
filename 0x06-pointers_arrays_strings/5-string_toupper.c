@@ -8,14 +8,14 @@
  * Return: modified str
  */
 
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
-	while (*s != '\0')
+	while (*str != '\0')
 	{
-		if (*s >= 'a' && *s <= 'z')
-			*s -= 32;
-		s++;
+		if (*str >= 'a' && *str <= 'z')
+			*str -= 32;
+		str++;
 	}
 
-	return (s);
+	return (str);
 }
