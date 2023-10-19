@@ -14,22 +14,22 @@ char *rot13(char *str)
 	char *chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char *rot = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	while (*p != '\0')
+	while (*str != '\0')
 	{
 		char *check = chars;
 		char *flip = rot;
 
 		while (*check != '\0')
 		{
-			if (*p == *check)
+			if (*str == *check)
 			{
-				*p = *flip;
+				*str = *flip;
 				break;
 			}
 			check++;
 			flip++;
 		}
-		p++;
+		str++;
 	}
-	return (str);
+	return (p);
 }
