@@ -23,7 +23,7 @@ char *leet(char *str)
 		{
 			if (*p == *check)
 			{
-				*p = *check;
+				*p = *flip;
 				break;
 			}
 			check++;
