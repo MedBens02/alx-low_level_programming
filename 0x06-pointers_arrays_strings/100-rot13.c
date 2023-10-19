@@ -13,19 +13,17 @@ char *rot13(char *str)
 	char *p = str;
 	char chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	int i;
 
 	while (*str != '\0')
 	{
-		int i = 0;
-
-		while (i <= 52)
+		for (i = 0; i <= 52; i++)
 		{
 			if (*str == chars[i])
 			{
 				*str = rot[i];
 				break;
 			}
-			i++;
 		}
 		str++;
 	}
