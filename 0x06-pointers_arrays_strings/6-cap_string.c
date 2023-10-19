@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdbool.h>
 
 /**
  * is_separator - checks if a char is separator
@@ -9,7 +8,7 @@
  * Return: True or False
  */
 
-bool is_separator(char c)
+int is_separator(char c)
 {
 	char sep[] = " \t\n,;.!?\"(){}";
 	char *p = sep;
@@ -17,11 +16,11 @@ bool is_separator(char c)
 	while (*p != '\0')
 	{
 		if (c == *p)
-			return true;
+			return (1);
 		p++;
 	}
 
-	return false;
+	return (0);
 }
 
 /**
@@ -34,7 +33,7 @@ bool is_separator(char c)
 
 char *cap_string(char *str)
 {
-	bool cap_next = true;
+	int cap_next = 1;
 	char *ptr = str;
 
 	while (*ptr != '\0')
@@ -44,5 +43,5 @@ char *cap_string(char *str)
 		cap_next = is_separator(*ptr);
 		ptr++;
 	}
-	return str;
+	return (str);
 }
