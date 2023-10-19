@@ -8,7 +8,7 @@
  * Return: coded string
  */
 
-char *leet(char *)
+char *leet(char *str)
 {
 	char *p = str;
 	char *chars = "AaEeOoTtLl";
