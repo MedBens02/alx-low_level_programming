@@ -7,7 +7,7 @@
  * Return: 1 if str is a palindrome, 0 otherwise.
  */
 
-int is_palindrome_recursive(char *s, int l);
+int palindrome(char *s, int l);
 
 int _strlen(char *s);
 
