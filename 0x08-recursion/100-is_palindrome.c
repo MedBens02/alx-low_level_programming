@@ -15,7 +15,7 @@ int is_palindrome(char *s)
 {
 	int l = _strlen(s);
 
-	return palindrome(s, l);
+	return (palindrome(s, l));
 }
 
 /**
@@ -44,10 +44,10 @@ int _strlen(char *s)
 int palindrome(char *s, int l)
 {
 	if (l <= 1)
-		return 1;
+		return (1);
 
 	else if (*s == s[l - 1])
-		return palindrome(s + 1, l - 2);
+		return (palindrome(s + 1, l - 2));
 
-	return 0;
+	return (0);
 }
