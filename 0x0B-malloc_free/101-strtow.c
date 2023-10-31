@@ -52,7 +52,7 @@ int cnt_word(char *str)
 int *start_word(char *str, int n)
 {
 	int *starts;
-	int i, word = 0;
+	int i = 0, word = 0;
 	int word_check = 0;
 
 	starts = malloc(sizeof(int) * n);
@@ -91,7 +91,7 @@ int *start_word(char *str, int n)
 int *len_word(char *str, int n, int *starts)
 {
 	int *lens;
-	int i, start, end;
+	int i = 0, start = 0, end = 0;
 
 	lens = malloc(sizeof(int) * n);
 
@@ -129,7 +129,7 @@ int *len_word(char *str, int n, int *starts)
 char **split_words(char *str, int n, int *starts, int *lens)
 {
 	char **words;
-	int i, j, word_len;
+	int i = 0, j = 0, word_len = 0;
 
 	words = malloc((sizeof(*words)) * (n + 1));
 
@@ -146,7 +146,7 @@ char **split_words(char *str, int n, int *starts, int *lens)
 		words[i] = malloc(word_len + 1);
 		if (words[i] == NULL)
 		{
-			for (j = 0; j < i; j++)
+			for (j = 0; j < n + 1; j++)
 				free(words[j]);
 			free(words);
 			return (NULL);
