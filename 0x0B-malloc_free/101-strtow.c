@@ -13,6 +13,9 @@ int cnt_word(char *str)
 	int n;
 	int word = 0;
 
+	if (str == NULL || *str == '\0')
+		return (0);
+
 	while (*str)
 	{
 		if (*str == ' ')
@@ -169,9 +172,6 @@ char **strtow(char *str)
 	starts = start_word(str, n);
 	lens = len_word(str, n, starts);
 	words = split_words(str, n, starts, lens);
-
-	if (str == NULL || *str == '\0')
-		return (NULL);
 
 	if (n == 0)
 		return (NULL);
