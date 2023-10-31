@@ -1,16 +1,31 @@
 #include "main.h"
 
 /**
+ * _strlen - calculates a str lenght.
+ *
+ * @s: str
+ *
+ * Return: len of str
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (s[len] != '\0')
+		len++;
+
+	return (len);
+}
+
+/**
  * argstostr - concatenates all the arguments of your program.
  *
  * @ac: num of args
  * @av: vec args
- * @s: str
  *
  * Return: ptr to result
  */
-
-int _strlen(char *str);
 
 char *argstostr(int ac, char **av)
 {
@@ -23,7 +38,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		if (av[i] != NULL)
-			p_len +=(1 +  _strlen(av[i]));
+			p_len += (1 +  _strlen(av[i]));
 	}
 
 	p = malloc(sizeof(*p) * p_len + 1);
@@ -46,22 +61,4 @@ char *argstostr(int ac, char **av)
 	p[p_i] = '\0';
 
 	return (p);
-}
-
-/**
- * _strlen - calculates a str lenght.
- *
- * @s: str
- *
- * Return: len of str
- */
-
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (s[len] != '\0')
-		len++;
-
-	return (len);
 }
