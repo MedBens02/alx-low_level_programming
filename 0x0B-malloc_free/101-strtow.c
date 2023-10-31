@@ -10,7 +10,7 @@
 
 int cnt_word(char *str)
 {
-	int n;
+	int n = 0;
 	int word = 0;
 
 	if (str == NULL || *str == '\0')
@@ -173,7 +173,7 @@ char **split_words(char *str, int n, int *starts, int *lens)
 char **strtow(char *str)
 {
 	char **words;
-	int n;
+	int n = 0;
 	int *starts;
 	int *lens;
 
