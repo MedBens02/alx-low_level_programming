@@ -58,7 +58,10 @@ int *start_word(char *str, int n)
 	starts = malloc(sizeof(int) * n);
 
 	if (starts == NULL)
+	{
+		free(starts);
 		return (NULL);
+	}
 
 	for (i = 0; str[i] != 0; i++)
 	{
@@ -93,7 +96,10 @@ int *len_word(char *str, int n, int *starts)
 	lens = malloc(sizeof(int) * n);
 
 	if (lens == NULL)
+	{
+		free(lens);
 		return (NULL);
+	}
 
 	for (i = 0; i < n; i++)
 	{
@@ -128,7 +134,10 @@ char **split_words(char *str, int n, int *starts, int *lens)
 	words = malloc((sizeof(*words)) * (n + 1));
 
 	if (words == NULL)
+	{
+		free(words);
 		return (NULL);
+	}
 
 	for (i = 0; i < n; i++)
 	{
@@ -174,7 +183,10 @@ char **strtow(char *str)
 	words = split_words(str, n, starts, lens);
 
 	if (n == 0)
+	{
+		free(words);
 		return (NULL);
+	}
 
 	free(starts);
 	free(lens);
