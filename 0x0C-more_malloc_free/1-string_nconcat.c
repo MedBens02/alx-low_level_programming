@@ -7,7 +7,7 @@
  * @s2: str 2
  * @n: n bytes of s2 to copy
  *
- * @Return: s1 + n bytes of s2
+ * Return: s1 + n bytes of s2
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
