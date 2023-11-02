@@ -4,6 +4,8 @@
  * malloc_checked - allocates memory using malloc.
  *
  * @b: size
+ *
+ * Return: ptr to the array or NULL.
  */
 
 void *malloc_checked(unsigned int b)
