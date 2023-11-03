@@ -69,6 +69,28 @@ void error(void)
 }
 
 /**
+ * _print - prints the product.
+ *
+ * @p: product str
+ * @l: length
+ */
+
+void _print(int *p, int l)
+{
+	int i, leftZero = 0;
+
+	while (leftZero < l && p[leftZero] == 0)
+		leftZero++;
+	if (leftZero == l)
+		_putchar('0');
+	else
+	{
+		for (i = leftZero; i < l - 1; i++)
+			_putchar(p[i] + '0');
+	}
+}
+
+/**
  * main - multiplies 2 positive numbers
  * @argc: number of arguments
  * @argv: arguments
@@ -81,7 +103,6 @@ int main(int argc, char *argv[])
 	char *s1, *s2;
 	int *product;
 	int l1, l2, Lt, i, j, tmp, carry, digS1, digS2;
-	int leftZero = 0;
 
 	s1 = argv[1], s2 = argv[2];
 
@@ -113,15 +134,7 @@ int main(int argc, char *argv[])
 			product[i + j + 1] += carry;
 	}
 
-	while (leftZero < Lt && product[leftZero] == 0)
-		leftZero++;
-	if (leftZero == Lt)
-		_putchar('0');
-	else
-	{
-		for (i = leftZero; i < Lt - 1; i++)
-			_putchar(product[i] + '0');
-	}
+	_print(product, Lt);
 
 	_putchar('\n');
 	free(product);
