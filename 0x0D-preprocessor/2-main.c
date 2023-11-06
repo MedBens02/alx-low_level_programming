@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * mian - name of src file
+ * main - name of src file
  *
  * Return: Always 0
  */
