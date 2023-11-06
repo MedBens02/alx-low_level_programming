@@ -1,6 +1,5 @@
 #include "dog.h"
 
-
 /**
  * _strdip - Duplicates a str
  *
@@ -8,7 +7,6 @@
  *
  * Return: ptr to a new str or NULL if fail
  */
-
 char *_strdup(char *str)
 {
 	char *ds;
@@ -39,7 +37,6 @@ char *_strdup(char *str)
  *
  * Return: dog's info
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
