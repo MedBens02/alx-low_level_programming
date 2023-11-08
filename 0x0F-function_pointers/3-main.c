@@ -4,7 +4,7 @@
  * main - entry pt
  *
  * @argc: args num
- * @argc: arg
+ * @argv: arg
  *
  * Return: Always 0
  */

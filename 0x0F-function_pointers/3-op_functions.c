@@ -12,7 +12,7 @@ int op_add(int a, int b)
 }
 
 /**
- * op_add - subs 2 ints
+ * op_sub - subs 2 ints
  * @a: int
  * @b: int
  * Return: sub.
@@ -23,7 +23,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_add - mult 2 ints
+ * op_mul - mult 2 ints
  * @a: int
  * @b: int
  * Return: prod.
@@ -34,7 +34,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_add - div 2 ints
+ * op_div - div 2 ints
  * @a: int
  * @b: int
  * Return: div.
@@ -50,7 +50,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_add - modulo 2 ints
+ * op_mod - modulo 2 ints
  * @a: int
  * @b: int
  * Return: modulo.
