@@ -14,6 +14,9 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int i;
 	int S = 0;
 
+	if (!n)
+		return (0);
+
 	va_start(nums, n);
 
 	for (i = 0; i < n; i++)
