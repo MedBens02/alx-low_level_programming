@@ -4,7 +4,7 @@
  * sum_them_all - sums of all its parameters.
  *
  * @n: number of nums
- *
+ * @...: numbers
  * Return: The sum.
  */
 
