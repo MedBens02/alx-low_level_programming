@@ -8,9 +8,10 @@
 /**
  * struct node - creates a single linked list
  *
- * str: string
+ * @str: string
  * @len: len of the str
  * @next: a ptr to the next node
+ *
  * Description: creates a node
  */
 struct node
