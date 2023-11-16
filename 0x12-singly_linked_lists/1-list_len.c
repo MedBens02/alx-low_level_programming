@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - Prints all the elements of a list
+ * list_len - Prints all the elements of a list
  *
  * @h: ptr to head of the list
  *
