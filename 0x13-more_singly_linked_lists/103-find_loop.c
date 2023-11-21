@@ -20,10 +20,10 @@ listint_t *find_listint_loop(listint_t *head)
 	while (ptr2 != NULL)
 	{
 		if (ptr2 == ptr2->next)
-			return(ptr2);
+			return (ptr2);
 		for (ptr1 = head; ptr1 != ptr2; ptr1 = ptr1->next)
 			if (ptr1 == ptr2->next)
-				return(ptr2->next);
+				return (ptr2->next);
 		ptr2 = ptr2->next;
 	}
 	return (NULL);
