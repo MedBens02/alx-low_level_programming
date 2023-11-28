@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	char buf[BUFFER_SIZE];
 
 	if (argc != 3)
-		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", argv[0]), exit (97);
+		dprintf(STDERR_FILENO, USAGE), exit(97);
 
 	src_fd = open(argv[1], O_RDONLY);
 	if (src_fd == -1)
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 	if (src_fd)
 		error_exit(ER_NOCLOSE, argv[1], 100);
 	if (to_fd)
-		error_exit(ER_NOCLOSE, argv[2], 100);
+		error_exit(ER_NOCLOSE, argv[1], 100);
 
 	return (0);
 }
