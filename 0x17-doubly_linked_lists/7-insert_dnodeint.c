@@ -3,7 +3,7 @@
 /**
  * insert_dnodeint_at_index - inserts a new node at a given position.
  *
- * @head: heas of list
+ * @h: head of list
  * @idx: index where to add a node
  * @n: data of the new node
  *
