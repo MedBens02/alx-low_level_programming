@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - calculates len of a dl list
+ * dlistint_len - calculates len of a dl list
  * @h: ptr to head of the list
  * Return: len
  */
